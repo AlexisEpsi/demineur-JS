@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Démineur JS</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <select multiple name="difficulte" id="difficulte">
+        <option>Débutant : 9x9 cases, 10 bombes</option>
+        <option>Intermédiaire : 16x16 cases, 40 bombes</option>
+        <option>Expert : 22x22 cases, 100 bombes</option>
+        <option>Maître : 30x30 cases, 250 bombes</option>
+    </select>
+    <button onclick="start()">Nouvelle partie</button>
+    <div style="display: flex; align-items: center;">⏱️<p id="affichage">0</p></div>
+
+    <div id="container">
+
+    </div>
+    <style>
+        .cell {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+    </style>
+    <ul id="classement">
+
+    </ul>
+</body>
+</html>
